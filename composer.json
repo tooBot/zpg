@@ -1,0 +1,22 @@
+{
+  "name": "core/zpg",
+  "description": "Zero Playing Game",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Kotejka DJUN",
+      "email": "xDall.by@gmail.com"
+    }
+  ],
+
+  "require": {
+    "usmanhalalit/pixie": "1.*@dev"
+  },
+  "autoload": {
+    "classmap": ["core"],
+    "psr-4": {
+      "Core\\": "core/"
+    }
+  }
+}
