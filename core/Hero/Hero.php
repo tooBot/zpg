@@ -17,4 +17,19 @@ class Hero
         $this->heroData = $this->repository->getHeroData();
     }
 
+    public function getHeroData()
+    {
+        return $this->heroData;
+    }
+
+    public function getHeroId()
+    {
+        return $this->heroId;
+    }
+
+    public function setHeroName($heroName)
+    {
+        return $this->repository->setHeroName($heroName);
+    }
+
 }
