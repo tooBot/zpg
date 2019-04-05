@@ -16,4 +16,5 @@ class Hero
         $this->repository = new HeroRepository($this->heroId);
         $this->heroData = $this->repository->getHeroData();
     }
+
 }
