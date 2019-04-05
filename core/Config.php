@@ -4,22 +4,6 @@ namespace core;
 
 class Config
 {
-    const WIN_EXP = 10;
-    const LOSE_EXP = 5;
-
-    const MAX_KICK_CHANCE = 95;
-    const MIN_KICK_CHANCE = 10;
-
-    public $heroData = [
-        'name' => '',
-        'level' => 0,
-        'strength' => 1,
-        'lucky' => 1,
-        'dextery' => 1,
-        'health' => 1,
-        'hp' => 1
-    ];
-
     public $levels = [
         0 => 0,
         1 => 100,
