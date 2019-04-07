@@ -38,6 +38,10 @@ class ComposerStaticInit95a22f30604c10196ddb703405988dd9
     );
 
     public static $classMap = array (
+        'Core\\Battle\\Battle' => __DIR__ . '/../..' . '/core/Battle/Battle.php',
+        'Core\\Users\\Register' => __DIR__ . '/../..' . '/core/Users/Register.php',
+        'Core\\Users\\Register\\EmailChecker' => __DIR__ . '/../..' . '/core/Users/EmailChecker.php',
+        'Core\\Users\\UsersRepository' => __DIR__ . '/../..' . '/core/Users/UsersRepository.php',
         'core\\Config' => __DIR__ . '/../..' . '/core/Config.php',
         'core\\Connection' => __DIR__ . '/../..' . '/core/Repositoy/Connection.php',
         'core\\Hero' => __DIR__ . '/../..' . '/core/Hero/Hero.php',
