@@ -18,7 +18,7 @@ class HeroRepository
         $this->heroId = $heroId;
     }
 
-    public function getHeroData()
+    public function getHeroData() : array
     {
         return $this->connection
             ->table(self::TBL_MAIN)
@@ -26,12 +26,15 @@ class HeroRepository
             ->get();
     }
 
-    public function saveHeroData($data)
+    public function saveHeroData(array $data) : bool
     {
+        $result = false;
 
+
+        return $result;
     }
 
-    public function setHeroName($heroName)
+    public function setHeroName(string $heroName) : bool
     {
         $heroData = $this->getHeroData();
 

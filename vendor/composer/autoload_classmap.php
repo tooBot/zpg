@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Core\\Battle\\Battle' => $baseDir . '/core/Battle/Battle.php',
+    'Core\\Users\\Auth' => $baseDir . '/core/Users/Auth.php',
     'Core\\Users\\Register' => $baseDir . '/core/Users/Register.php',
     'Core\\Users\\Register\\EmailChecker' => $baseDir . '/core/Users/EmailChecker.php',
     'Core\\Users\\UsersRepository' => $baseDir . '/core/Users/UsersRepository.php',

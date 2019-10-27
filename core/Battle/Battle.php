@@ -50,7 +50,7 @@ class Battle
         $this->config = new Config();
     }
 
-    public function getHeroDamage($heroData)
+    public function getHeroDamage(array $heroData) : int
     {
         $min = round($heroData['h_dex'] + $heroData['h_luck'] * 0.5);
         $max = round($heroData['h_str'] + $heroData['h_dex'] * 0.5 + $heroData['h_luck'] * 0.75);
@@ -64,12 +64,12 @@ class Battle
         return mt_rand($min, $max);
     }
 
-    public function getHeroHP($heroData)
+    public function getHeroHP(array $heroData) : int
     {
         return pow($heroData['h_level'], 2) + ($heroData['h_level'] + 1) * 5;
     }
 
-    public function getHeroMissChance($heroData, $enemyData)
+    public function getHeroMissChance(array $heroData, array $enemyData) : int
     {
         $chance = pow($heroData['h_dex'], 2) - pow($enemyData['h_luck'], 2);
 
@@ -80,7 +80,7 @@ class Battle
         return $chance;
     }
 
-    public function getHeroKritChance($heroData, $enemyData)
+    public function getHeroKritChance(array $heroData, array $enemyData) : int
     {
         $chance = pow($heroData['h_luck'], 2) - pow($enemyData['h_health'], 2) - $enemyData['h_luck'];
 

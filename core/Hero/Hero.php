@@ -17,17 +17,17 @@ class Hero
         $this->heroData = $this->repository->getHeroData();
     }
 
-    public function getHeroData()
+    public function getHeroData() : array
     {
         return $this->heroData;
     }
 
-    public function getHeroId()
+    public function getHeroId() : int
     {
         return $this->heroId;
     }
 
-    public function setHeroName($heroName)
+    public function setHeroName(string $heroName) : bool
     {
         return $this->repository->setHeroName($heroName);
     }
